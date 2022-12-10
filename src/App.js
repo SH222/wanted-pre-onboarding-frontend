@@ -1,13 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
 import { Route, Routes } from "react-router-dom";
-import SignUp from "./pages/SignUp";
+import Auth from "./pages/Auth/Auth";
+import Todo from "./pages/ToDo/ToDo";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<SignUp />} />
+        <Route path="/" element={<Auth />} />
+        <Route path="/todo" element={<Todo />} />
       </Routes>
     </div>
   );
